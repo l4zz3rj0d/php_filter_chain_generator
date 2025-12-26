@@ -6,6 +6,14 @@ A CLI to generate PHP filters chain, get your RCE without uploading a file if yo
 $ python3 php_filter_chain_generator.py --help             
 usage: php_filter_chain_generator.py [-h] [--chain CHAIN] [--rawbase64 RAWBASE64]
 
+PHP filter chain generator.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --chain CHAIN         Content you want to generate. (you will maybe need to pad with spaces for your payload to work)
+  --rawbase64 RAWBASE64
+                        The base64 value you want to test, the chain will be printed as base64 by PHP, useful to debug.
+
 # PHP filter chain generator.
 
 optional arguments:
