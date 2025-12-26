@@ -23,11 +23,15 @@ optional arguments:
 ```
 
 ### Parameters
-chain : a PHP chain you want to inject
-Example of a filter chain generating <?php phpinfo(); ?>
+```text
+--chain CHAIN
+    PHP payload to convert into a filter chain.
+    Padding with spaces may be required depending on payload length.
 
-'''bash
+    Example:
+    $ python3 php_filter_chain_generator.py --chain ' '
 
-$ python3 php_filter_chain_generator.py --chain '<?php phpinfo(); ?>  '
-
-'''
+--rawbase64 RAWBASE64
+    Base64 string to test.
+    The tool prints the decoded output as processed by PHP.
+```
